@@ -9,14 +9,14 @@ Specifically, we first performed broad communication pattern analyses to highlig
 In summary, with the novel advances in single-cell sequencing technologies, we show that cellular signaling is regulated in a cell-type-specific manner and that improper regulation of extracellular signaling genes is linked to intracellular risk genes, giving the mechanistic intra- and inter-cellular picture of AD.
 
 ### Methodology
-1. scRNA-seq Processing: 
-    * Mapped the raw reads and generated a cell-by-count matrix using CellRanger count v6.0
-    * Used the program remove-background from the CellBender package to more carefully separate out true cells from empty droplets with ambient RNA
-    * Removed 1,135 genes included in the MitoCarta v3.0 database after filtering cells based on the lower bounds
-    * Doublets were identified using a combination of two computational methods Scrublet and DoubletDetection
-    * Aggregated demultiplexed samples again in Pegasus for robust gene identification, highly variable gene selection, principal component analysis (PCA), batch correction using Harmony, nearest-neighbor detection, Leiden clustering, and Uniform Manifold Approximation and Projection (UMAP) dimensionality reduction
+1. scRNA-seq Processing:
+   1. Mapped the raw reads and generated a cell-by-count matrix using CellRanger count v6.0
+   2. Used the program remove-background from the CellBender package to more carefully separate out true cells from empty droplets with ambient RNA
+   3. Removed 1,135 genes included in the MitoCarta v3.0 database after filtering cells based on the lower bounds
+   4. Doublets were identified using a combination of two computational methods Scrublet and DoubletDetection
+   5. Aggregated demultiplexed samples again in Pegasus for robust gene identification, highly variable gene selection, principal component analysis (PCA), batch correction using Harmony, nearest-neighbor detection, Leiden clustering, and Uniform Manifold Approximation and Projection (UMAP) dimensionality reduction
 2. Cell Type Annotation
-    * Used Pegasus’ infer_cell_types function to associate Leiden clusters with reference cell types based on the hybrid marker gene sets obtained from merging BICCN’s neuronal subclass markers and Ma et al’s non-neuronal subclasses
+   1. Used Pegasus’ infer_cell_types function to associate Leiden clusters with reference cell types based on the hybrid marker gene sets obtained from merging BICCN’s neuronal subclass markers and Ma et al’s non-neuronal subclasses
 3. Intercellular Communication Analyses
 4. AD Risk Gene Extraction 
 5. Intracellular Communication Analyses
