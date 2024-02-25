@@ -27,5 +27,6 @@ Results from our C2C analysis have shown that there is a global C2C communicatio
 ### Validation
 
 ### System Requirements
+Look at the `environment.txt` for all library versions. 
 
-### Significant References
+### Significant References 
