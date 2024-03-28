@@ -5,7 +5,7 @@ my_netVisual_aggregate2 <- function(net.diff, edge.transparency = FALSE, signali
                                 measure = c("weight","count"),
                                 layout = c("circle", "chord"),
                                 weight.scale = TRUE, edge.weight.max = NULL, edge.width.max=8,
-                                pt.title = 12, title.space = 6, vertex.label.cex = 0.8,title.cex=1.1,
+                                pt.title = 10, title.space = 6, vertex.label.cex = 0.8,title.cex=1.1,
                                 alpha.image = 0.15, point.size = 1.5,
                                 group = NULL,cell.order = NULL,small.gap = 1, big.gap = 10, scale = FALSE, reduce = -1, show.legend = FALSE, legend.pos.x = 20,legend.pos.y = 20,
                                 ...) {
