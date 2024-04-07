@@ -9,7 +9,7 @@ library(circlize)
 
 NMF_and_river_OUT <- function(neuronchat_object, study, disease, inhibitory_celltypes, excitatory_celltypes, support_celltypes, chosen_version, quant_threshold, k, parallel='p16') {
     for (chosen_seed in seeds){
-        for (chosen_nrun in nrums){
+        for (chosen_nrun in nruns){
             for (chosen_method in methods){
                 try({
                 slot.name = "net"
