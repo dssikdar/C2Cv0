@@ -1,4 +1,4 @@
-# Characterizing dysregulations via cell cell communications in Alzheimer's brains using single cell transcriptomes
+# Characterizing dysregulations via cell-cell communications in Alzheimer's brains using single-cell transcriptomes
 
 ### Abstract
 #### Background
